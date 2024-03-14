@@ -1,9 +1,0 @@
-{
-  "dependencies": {
-    "save": "^2.9.0",
-    "three": "^0.162.0"
-  },
-  "devDependencies": {
-    "vite": "^5.1.6"
-  }
-}
