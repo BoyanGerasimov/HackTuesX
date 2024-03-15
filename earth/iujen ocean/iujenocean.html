@@ -127,12 +127,19 @@ img {
   </tr>
 </table>
 
+<button onclick="returnToMainPage()">Back</button>
+
 <script>
 window.onload = function() {
     setTimeout(function() {
         document.getElementById('myTable').style.display = 'table';
     }, 2000);
 };
+
+function returnToMainPage()
+{
+  document.URL = window.location.replace("../index.html")
+}
 </script>
 
 </body>

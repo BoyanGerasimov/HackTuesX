@@ -63,6 +63,17 @@ img {
 ::-webkit-scrollbar {
   display: none;
 }
+
+.button{
+  z-index: 0;
+  position: relative;
+  width: 10%;
+  height: 5%;
+  top: 0%;
+  left: 90%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
 </style>
 </head>
 <body>
@@ -125,6 +136,7 @@ img {
     </td>
   </tr>
 </table>
+<button onclick="returnToMainPage()">Back</button>
 
 <script>
 window.onload = function() {
@@ -132,6 +144,11 @@ window.onload = function() {
         document.getElementById('myTable').style.display = 'table';
     }, 2000);
 };
+
+function returnToMainPage()
+{
+  document.URL = window.location.replace("../index.html")
+}
 </script>
 
 </body>
