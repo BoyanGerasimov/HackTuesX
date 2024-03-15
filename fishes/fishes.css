@@ -1,0 +1,42 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+  }
+  
+  .tank {
+    width: 100%;
+    height: 100%;
+    background-color: #87CEEB; /* Blue background to represent water */
+    position: relative;
+  }
+  
+  .fish {
+    width: 50px;
+    height: 30px;
+    background-image: url('fish.png'); /* Image of fish */
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    animation: swim 5s linear infinite; /* Adjust animation duration as needed */
+  }
+  
+  @keyframes swim-left {
+    0% {
+      left: 100%;
+    }
+    100% {
+      left: -80%; /* Change -20% to -80% if you want fish to go off screen */
+    }
+  }
+  
+  @keyframes swim-right {
+    0% {
+      left: -80%; /* Change -20% to -80% if you want fish to go off screen */
+    }
+    100% {
+      left: 100%;
+    }
+  }
+  
