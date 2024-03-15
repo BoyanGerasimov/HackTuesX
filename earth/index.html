@@ -9,9 +9,20 @@
 <body>
   <div class="start-screen">
     <h1 class="title">Learn The A, B, Sea</h1>
-    <p class="description">A smaller description below it.</p>
+    <p class="description">"Learn the A, B, Sea" is an engaging educational project designed to delve into the wonders of our oceans and seas in a captivating and informative manner. Through interactive exploration, users embark on a journey to discover the rich diversity of marine life and ecosystems that inhabit these vast bodies of water.</p>
     <button class="start-button" id="startButton">Start</button>
   </div>
   <script src="start.js"></script>
+  <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+	<defs>
+		<path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+	</defs>
+	<g class="wave">
+		<use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(0,65,218,0.7)" />
+		<use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(0,65,218,0.5)" />
+		<use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(0,65,218,0.3)" />
+		<use xlink:href="#gentle-wave" x="48" y="7" fill="#0040DA" />
+	</g>
+</svg>
 </body>
 </html>

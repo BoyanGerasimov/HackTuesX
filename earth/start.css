@@ -1,63 +1,88 @@
-body, html {
+body,
+html {
     margin: 0;
     padding: 0;
     height: 100%;
-  }
-  
-  .start-screen {
+}
+
+.start-screen {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100%;
-    background-color: #87CEEB; /* Light blue background */
-    overflow: hidden; /* Hide overflow to prevent scrollbars */
-  }
-  
-  .title {
-    font-size: 3em; /* Adjust font size */
-    font-weight: bold; /* Bold font */
-    color: white; /* White color */
+    background-color: #87CEEB;
+    overflow: hidden;
+}
+
+.title {
+    font-size: 3em;
+    font-weight: bold;
+    color: white;
     text-align: center;
-  }
-  
-  .description {
-    font-size: 1.5em; /* Adjust font size */
-    color: white; /* White color */
+}
+
+.description {
+    font-size: 1.5em;
+    color: white;
     text-align: center;
-  }
-  
-  .start-button {
-    padding: 15px 30px; /* Adjust padding */
-    margin-top: 20px; /* Adjust margin */
-    background-color: blue; /* Blue button background */
-    color: white; /* White text color */
-    border: none; /* Remove border */
-    border-radius: 10px; /* Rounded corners */
-    font-size: 1.2em; /* Adjust font size */
-    cursor: pointer; /* Cursor pointer on hover */
-  }
-  
-  .start-button:hover {
-    background-color: darkblue; /* Darker blue on hover */
-  }
-  
-  .waves {
+    width: 80%; 
+    word-wrap: break-word;
+}
+
+.start-button {
+    padding: 15px 30px;
+    margin-top: 20px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.start-button:hover {
+    background-color: darkblue;
+}
+
+.waves {
     position: absolute;
-    bottom: 0;
-    left: 0;
     width: 100%;
-    height: 200px; /* Adjust height */
-    background: url('waves.png') repeat-x; /* Wave background image */
-    animation: animateWaves 10s linear infinite; /* Animation */
-  }
-  
-  @keyframes animateWaves {
+    bottom: 0;
+    min-height: 100px;
+    max-height: 160px;
+}
+
+.wave use {
+    animation: moveForever 26s cubic-bezier(.55, .5, .45, .5) infinite;
+}
+
+@keyframes moveForever {
     0% {
-      background-position-x: 0;
+        transform: translate3d(-90px, 0, 0);
     }
+
     100% {
-      background-position-x: 1000px; /* Adjust distance */
+        transform: translate3d(85px, 0, 0);
     }
-  }
-  
+}
+
+.wave use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
+}
+
+.wave use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
+}
+
+.wave use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
+}
+
+.wave use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
+}
