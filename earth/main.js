@@ -57,22 +57,3 @@ function animate() {
   sphere.rotation.x += 0.0001;
 }
 animate();
-
-document.addEventListener('DOMContentLoaded', function() {
-  const dropdownItems = document.querySelectorAll('.dropdown-content a');
-  dropdownItems.forEach(function(item) {
-      item.addEventListener('click', function() {
-          alert('You selected: ' + item.textContent);
-      });
-  });
-});
-
-document.addEventListener('DOMContentLoaded', function() {
-  const dropdownItems = document.querySelectorAll('.dropdown-content a');
-  dropdownItems.forEach(function(item) {
-    item.addEventListener('click', function() {
-      const newPageURL = item.getAttribute('href');
-      window.location.href = newPageURL;
-    });
-  });
-});
