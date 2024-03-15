@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Start content from the top */
+    min-height: 100vh;
+    margin: 0;
+    padding-top: 50px; /* Add padding to the top */
+    background: url('nigga.png') no-repeat center center fixed; /* Set background image */
+    background-size: cover; /* Cover the entire page */
+    font-family: Arial, sans-serif;
+}
+
+table {
+    display: none;
+    border-collapse: separate;
+    border-spacing: 0 20px; /* Add spacing between rows */
+    width: 50%; /* Reduce table width */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: transparent; /* Make table background transparent */
+    margin-top: 20px; /* Add top margin */
+}
+
+td {
+    padding: 20px; /* Increase cell padding */
+    text-align: left;
+    border-bottom: 1px solid transparent; /* Make lines transparent */
+    display: flex; /* Add flexibility to cells */
+    align-items: center; /* Center elements in cells */
+}
+
+img {
+    width: 300px; /* Reduce image size */
+    height: 300px;
+    border-radius: 1%;
+    object-fit: cover;
+    margin-right: 10px; /* Reduce spacing next to text */
+    border-radius: 10px;
+}
+
+.name {
+    font-weight: bold;
+    margin-bottom: 5px; /* Reduce spacing between name and description */
+}
+</style>
+</head>
+<body>
+
+<table id="myTable">
+  <tr>
+    <td>
+      <img src="nigga.png" alt="Animal 1">
+      <div>
+        <div class="name">Animal 1</div>
+        <div>Description for Animal 1</div>
+      </div>
+    </td>
+  </tr>
+  <!-- Repeat for other animals -->
+  <tr>
+    <td>
+      <img src="nigga.png" alt="Animal 2">
+      <div>
+        <div class="name">Animal 2</div>
+        <div>Description for Animal 2</div>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <img src="nigga.png" alt="Animal 3">
+      <div>
+        <div class="name">Animal 3</div>
+        <div>Description for Animal 3</div>
+      </div>
+    </td>
+  </tr>
+  <!-- Repeat for other animals -->
+  <tr>
+    <td>
+      <img src="nigga.png" alt="Animal 4">
+      <div>
+        <div class="name">Animal 4</div>
+        <div>Description for Animal 4</div>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <img src="nigga.png" alt="Animal 5">
+      <div>
+        <div class="name">Animal 5</div>
+        <div>Description for Animal 5</div>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <img src="nigga.png" alt="Animal 6">
+      <div>
+        <div class="name">Animal 6</div>
+        <div>Description for Animal 6</div>
+      </div>
+    </td>
+  </tr>
+  <!-- Repeat for other animals -->
+  <tr>
+    <td>
+      <img src="nigga.png" alt="Animal 7">
+      <div>
+        <div class="name">Animal 7</div>
+        <div>Description for Animal 7</div>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <img src="nigga.png" alt="Animal 8">
+      <div>
+        <div class="name">Animal 8</div>
+        <div>Description for Animal 8</div>
+      </div>
+    </td>
+  </tr>
+</table>
+
+<script>
+window.onload = function() {
+    setTimeout(function() {
+        document.getElementById('myTable').style.display = 'table';
+    }, 2000);
+};
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
