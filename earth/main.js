@@ -48,7 +48,7 @@ const group = new THREE.Group();
 group.add(sphere);
 scene.add(group);
 
-camera.position.z = 25;
+camera.position.z = 20;
 
 function animate() {
   requestAnimationFrame(animate);

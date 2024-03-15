@@ -11,7 +11,6 @@ body {
     min-height: 100vh;
     margin: 0;
     padding-top: 50px; /* Add padding to the top */
-    background: url('arctic-ocean.jpg') no-repeat center center fixed; /* Set background image */
     background-size: cover; /* Cover the entire page */
     font-family: Arial, sans-serif;
 }
@@ -24,7 +23,7 @@ table {
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background: transparent; /* Make table background transparent */
+    background: rgb(255 255 255 / 60%);
     margin-top: 20px; /* Add top margin */
 }
 
@@ -40,7 +39,7 @@ img {
     width: 300px; /* Reduce image size */
     height: 300px;
     border-radius: 1%;
-    object-fit: cover;
+    object-fit: contain;
     margin-right: 10px; /* Reduce spacing next to text */
     border-radius: 10px;
 }
@@ -56,7 +55,7 @@ img {
 <table id="myTable">
   <tr>
     <td>
-      <img src="cod.jpg" alt="Animal 1">
+      <img src="./arctic/cod.jpg" alt="Animal 1">
       <div>
         <div class="name">Морска треска</div>
         <div>Това е трапезна риба, с максимален размер 1.8 метра. Тежи между 5-12 килограма и е една от най-питателните риби,
@@ -68,7 +67,7 @@ img {
   <!-- Repeat for other animals -->
   <tr>
     <td>
-      <img src="narwhal.png" alt="Animal 2">
+      <img src="./arctic/narwhal.jpg" alt="Animal 2">
       <div>
         <div class="name">Нарвал</div>
         <div>Нарвалът е зъбат кит живеещ на Арктика. Характеризира се с големия рог при мъжките индивиди, който има подобни функции с тези на еленските
@@ -79,7 +78,7 @@ img {
   </tr>
   <tr>
     <td>
-      <img src="skate.jpg" alt="Animal 3">
+      <img src="./arctic/skate.jpg" alt="Animal 3">
       <div>
         <div class="name">Арктически скат</div>
         <div>Те имат подобни характеристики с обикновените скатове, с разликата че са по приспособлени за студените води. Кожата им 
@@ -90,7 +89,7 @@ img {
   <!-- Repeat for other animals -->
   <tr>
     <td>
-      <img src="beluga.jpg" alt="Animal 4">
+      <img src="./arctic/beluga.jpg" alt="Animal 4">
       <div>
         <div class="name">Белуга</div>
         <div>Белугата е в същото семейство като нарвалите. Разпространени са в полярните и субполярни води на Северния ледовит океан. Имат 
@@ -101,7 +100,7 @@ img {
   </tr>
   <tr>
     <td>
-      <img src="bowhead.jpg" alt="Animal 5">
+      <img src="./arctic/bowhead.jpg" alt="Animal 5">
       <div>
         <div class="name">Грендландски кит</div>
         <div>Гренландските китове са вид едри бозайници от семейство Гладки китове. Живеят в Северния ледовит океан. Имат масивно 
