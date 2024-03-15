@@ -4,58 +4,79 @@ body, html {
     margin: 0;
     padding: 0;
     overflow: hidden;
-  }
+}
 
-.dropdown {
-    position: absolute; /* Position the dropdown menu relative to the viewport */
-    z-index: 1; /* Ensure the dropdown appears above other content */
-    font-size: 18px; /* Increase font size for bigger button */
-    width: auto; /* Ensure button width adjusts to content */
-  }
+.container {
+    display: flex;
+}
 
-  
-  /* Rest of the dropdown styles remain the same */
-  /* Dropdown button */
-  .dropbtn {
-    background-color: #3498db;
-    color: white;
-    padding: 10px;
-    margin: 5px;
-    border: none;
-    cursor: pointer;
-    font-size: 18px; /* Increase font size for bigger button */
-    width: auto; /* Ensure button width adjusts to content */
-  }
-  
-  /* Dropdown content (hidden by default) */
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 35vh;
+    width: 300px;
+    background: #fff;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
     z-index: 1;
-  }
-  
-  /* Links inside the dropdown */
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {
-    background-color: #f1f1f1;
-  }
-  
-  /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
+    list-style: none;
+    padding: 0;
+}
 
-  ::-webkit-scrollbar {
+nav ul {
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: rgb(85, 83, 83);
+    font-size: 14px;
+    width: 100%;
+    padding: 10px;
+    background-color: white; /* Add white background */
+}
+
+.logo {
+    text-align: center;
+    display: flex;
+    align-items: center; /* Center logo vertically */
+    margin: 10px 0;
+}
+
+.logo img {
+    width: 30px; /* Adjust logo size */
+    height: 30px; /* Adjust logo size */
+    border-radius: 50%;
+    margin-right: 10px; /* Add spacing between logo and text */
+}
+
+.logo span {
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+nav .fas {
+    width: 70px;
+    height: 40px;
+    font-size: 20px;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.nav-item {
+    margin-left: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+a:hover {
+    background: #eee;
+}
+
+::-webkit-scrollbar {
     display: none;
-  }
-  
+}
