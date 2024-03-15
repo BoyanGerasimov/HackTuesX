@@ -1,49 +1,40 @@
-/* Style the dropdown container */
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5f5;
+  padding: 10px;
+}
+
 .dropdown {
-    position: absolute; /* Position the dropdown menu relative to the viewport */
-    z-index: 1; /* Ensure the dropdown appears above other content */
-    font-size: 18px; /* Increase font size for bigger button */
-    width: auto; /* Ensure button width adjusts to content */
-  }
-  
-  /* Rest of the dropdown styles remain the same */
-  /* Dropdown button */
-  .dropbtn {
-    background-color: #3498db;
-    color: white;
-    padding: 10px;
-    margin: 5px;
-    border: none;
-    cursor: pointer;
-    font-size: 18px; /* Increase font size for bigger button */
-    width: auto; /* Ensure button width adjusts to content */
-  }
-  
-  /* Dropdown content (hidden by default) */
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  /* Links inside the dropdown */
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {
-    background-color: #f1f1f1;
-  }
-  
-  /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-  
+  position: relative;
+}
+
+.dropbtn {
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
