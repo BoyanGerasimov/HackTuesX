@@ -1,10 +1,18 @@
 /* Style the dropdown container */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
 .dropdown {
     position: absolute; /* Position the dropdown menu relative to the viewport */
     z-index: 1; /* Ensure the dropdown appears above other content */
     font-size: 18px; /* Increase font size for bigger button */
     width: auto; /* Ensure button width adjusts to content */
   }
+
   
   /* Rest of the dropdown styles remain the same */
   /* Dropdown button */
@@ -45,5 +53,9 @@
   /* Show the dropdown menu on hover */
   .dropdown:hover .dropdown-content {
     display: block;
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
   }
   
