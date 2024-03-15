@@ -1,14 +1,8 @@
-.menu {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #f5f5f5;
-  padding: 10px;
-}
-
+/* Style the dropdown container */
 .dropdown {
   position: relative;
 }
+
 
 .dropbtn {
   background-color: #333;
@@ -38,3 +32,7 @@
 .dropdown-content a:hover {
   background-color: #ddd;
 }
+
+  ::-webkit-scrollbar {
+    display: none;
+  }

@@ -60,6 +60,8 @@ function animate() {
 }
 animate();
 
+
+
 const dropbtn = document.querySelector('.dropbtn');
 const dropdownContent = document.querySelector('.dropdown-content');
 
