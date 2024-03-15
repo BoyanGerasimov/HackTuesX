@@ -21,10 +21,8 @@ table {
     border-collapse: separate;
     border-spacing: 0 20px; /* Add spacing between rows */
     width: 50%; /* Reduce table width */
-    border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background: rgb(255 255 255 / 65%);
     margin-top: 20px; /* Add top margin */
 }
 
@@ -40,11 +38,16 @@ table td {
 
 td {
     padding: 20px; /* Increase cell padding */
-    text-align: left;
+    text-align: center;
     border-bottom: 1px solid transparent; /* Make lines transparent */
     display: flex; /* Add flexibility to cells */
     align-items: center; /* Center elements in cells */
+    border: 1px solid black; /* Add border to each cell */
+    background: rgb(255 255 255 / 65%);
+    border-radius: 30px; /* Round the edges of the cells */
 }
+
+
 
 img {
     width: 300px; /* Reduce image size */
@@ -57,6 +60,7 @@ img {
 
 .name {
     font-weight: bold;
+    text-align: center;
     margin-bottom: 5px; /* Reduce spacing between name and description */
 }
 
@@ -79,7 +83,6 @@ img {
       </div>
     </td>
   </tr>
-  <!-- Repeat for other animals -->
   <tr>
     <td>
       <img src="./indian ocean/redcrab.jpg" alt="Animal 2">
@@ -102,7 +105,6 @@ img {
       </div>
     </td>
   </tr>
-  <!-- Repeat for other animals -->
   <tr>
     <td>
       <img src="./indian ocean/cucumber.jpg" alt="Animal 4">
@@ -138,8 +140,8 @@ img {
   </tr>
 </table>
 
-
 <button onclick="returnToMainPage()">Back</button>
+
 <script>
 window.onload = function() {
     setTimeout(function() {
