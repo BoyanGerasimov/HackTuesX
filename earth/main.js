@@ -58,3 +58,11 @@ function animate() {
 }
 animate();
 
+document.addEventListener('DOMContentLoaded', function() {
+  const dropdownItems = document.querySelectorAll('.dropdown-content a');
+  dropdownItems.forEach(function(item) {
+      item.addEventListener('click', function() {
+          alert('You selected: ' + item.textContent);
+      });
+  });
+});
